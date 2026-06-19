@@ -43,14 +43,26 @@ Utilizes the device's built-in accelerometer to detect sudden seismic anomalies.
 * Runs via a highly optimized background service to minimize battery consumption.
 * Implements a custom mathematical threshold algorithm to differentiate between normal device handling and actual seismic vibration.
 
+<div align="center">
+  <img src="assets/screenshots/Screenshot_20250501-233235_Deprem Alarm.jpg" alt="Deprem Alarmı Seismic Monitoring" width="250">
+</div>
+
 ### 2. Geospatial Disaster Tracking (Network Level)
 Fetches and processes real-time earthquake data from the AFAD (Disaster and Emergency Management Authority) REST API.
 * Executes asynchronous `OkHttp` GET requests (T-3h timeframe, 500 event limit) to prevent UI thread blocking.
 * Custom JSON parsing and object mapping (`EarthquakeModel`).
 * Implements dynamic, memory-efficient in-app filtering (by Magnitude and City) before updating the OSMDroid map overlays and `RecyclerView`.
 
+<div align="center">
+  <img src="assets/screenshots/Screenshot_20250501-233406_Deprem Alarm.jpg" alt="Deprem Alarmı Tracking" width="250">
+</div>
+
 ### 3. Emergency Utilities
 Integrated SOS functionalities (high-frequency whistle media) accessible under extreme stress conditions, engineered to bypass standard audio focus interruptions when necessary.
+
+<div align="center">
+  <img src="assets/screenshots/Screenshot_20250501-233450_Deprem Alarm.jpg" alt="Deprem Alarmı Emergency Utilities" width="250">
+</div>
 
 ---
 
